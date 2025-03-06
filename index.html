@@ -8,20 +8,26 @@
     <body>
         <h1 class="text">Potato Cannon</h1>
         <h4 class="text">Enter the PSI, the mass (KG), and the surface area (In^2)</h4>
-        <h4 class="text">These calculations only work for cannons with 0.2 meter barrels</h4>
+        <h4 class="text">These calculations only work for cannons with 16 inch barrels</h4>
         <hr>
         <h3 class="text">Cannon PSI</h3>
         <input class="input" type="number" id="psiInput" min="1" max="100" step="1" oninput="validatePsiInput()">
         <br>
-        <h3 class="text">Potato Mass (KG)</h3>
+        <h3 class="text">Potato Mass (LBS)</h3>
         <input class="input" type="number" id="massInput" min="0" max="10" step="1" oninput="validateMassInput()" >
         <br>
-        <h3 class="text">Potato Surface Area (In^2)</h3>
+        <h3 class="text">Potato Cross Sectional Area (In^2)</h3>
         <input class="input" type="number" id="areaInput" min="0" max="10" step="1" oninput="validateAreaInput()">
+        <br>
+        <h3 class="text">Tank Volume (In^3)</h3>
+        <input class="input" type="number" id="volumeInput" min="0" max="10" step="1" oninput="validateVolumeInput()">
         <br>
         <h2 class="text" id="distanceLabel">DISTANCE = 0 FT</h2>
         <h2 class="text" id="timeLabel">TIME = 0 S</h2>
         <button class="button" id="calculateButton">CALCULATE</button>
         <script src="script.js"></script>
+        <br>
+        <br>
+        <br>
     </body>
 </html>

@@ -60,7 +60,7 @@ document.getElementById("calculateButton").addEventListener("click", function() 
   
     R = vx*tTotal;
     R = R*3.28; //Convert meters to feet
-    tTotal = Math.round(tTotal);
+    tTotal = Math.round(Number(tTotal));
     R = Math.round(R);
     document.getElementById("distanceLabel").textContent = "DISTANCE = "+R+" FT";
     document.getElementById("timeLabel").textContent = "TIME = "+tTotal+" S";
